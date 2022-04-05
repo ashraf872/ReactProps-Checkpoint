@@ -10,7 +10,7 @@ const Profile = (props) =>{
         
     
     };
-    Profile.defaultProps = {fullName :'Ashraf Ben Khemis',bio:'Student',profession:'Enginer'}
+    
     alert('Hi'.concat(' ',props.fullName));
     return (
         <>
@@ -18,7 +18,7 @@ const Profile = (props) =>{
         <h1 style={{fontWeight:"bold"}}>{props.fullName}</h1>
         <h1>{props.bio}</h1>
         <h1>{props.profession}</h1>
-        <img className="image" src="./Ashraf.png" alt="child"/>{props.children}
+        <div className="newdiv"><img className="image" src={props.src} alt="child"/>{props.children}</div>
         
         </>
     );
@@ -27,5 +27,5 @@ const Profile = (props) =>{
 }
 
 
-
+Profile.defaultProps = {fullName :'Ashraf Ben Khemis',bio:'Student',profession:'Enginer'};
 export default Profile;
