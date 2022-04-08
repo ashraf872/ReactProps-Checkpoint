@@ -7,6 +7,7 @@ const Profile = (props) =>{
         name : PropTypes.string,
         bio : PropTypes.string,
         profession : PropTypes.string,
+        src : PropTypes.string,
         
     
     };
@@ -27,5 +28,5 @@ const Profile = (props) =>{
 }
 
 
-Profile.defaultProps = {fullName :'Ashraf Ben Khemis',bio:'Student',profession:'Enginer'};
+Profile.defaultProps = {fullName :'Ashraf Ben Khemis',bio:'Student',profession:'Enginer',src:'./Ashraf.png'};
 export default Profile;
